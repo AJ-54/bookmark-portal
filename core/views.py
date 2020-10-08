@@ -1,25 +1,9 @@
 from rest_framework.generics import ListAPIView, CreateAPIView, DestroyAPIView, UpdateAPIView
-from rest_framework import routers, serializers, viewsets, status
+
 from .models import Bookmark,Tag
 from .serializers import BookmarkSerializer,TagSerializer
 
 # Create your views here.
-
-class BookmarkViewSet(viewsets.ModelViewSet):
-    """
-    List all Bookmarks, or create a new bookmark.
-    """
-    queryset = Bookmark.objects.all()
-    serializer_class = BookmarkSerializer
-
-
-class TagViewSet(viewsets.ModelViewSet):
-    """
-    List all Tags, or create a new Tag.
-    """
-    queryset = Tag.objects.all()
-    serializer_class = TagSerializer
-    ordering_fields = ['updated_at']
 
 class BookMarkListAPIView(ListAPIView):
     queryset = Bookmark.objects.all()
