@@ -1,5 +1,7 @@
 # BookMark-Portal
 
+Access the portal at https://bookmark-portal.herokuapp.com/ through below endpoints
+
 ## Supporting End Points
 
 * List all BookMarks -> https://bookmark-portal.herokuapp.com/api/bookmarks
